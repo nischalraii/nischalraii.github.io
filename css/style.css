@@ -56,3 +56,29 @@
      background-color: #2a2a2a;
      color: #f0f0f0;
  }
+
+ .mission-timeline:before {
+     content: '';
+     position: absolute;
+     left: 18px;
+     top: 0;
+     bottom: 0;
+     width: 2px;
+     background: repeating-linear-gradient(to bottom, #bdbdbd, #bdbdbd 8px, transparent 8px, transparent 16px);
+     z-index: 0;
+ }
+
+ .mission-content {
+     position: relative;
+     z-index: 1;
+     transition: box-shadow 0.2s, border-color 0.2s;
+ }
+
+ .mission-card:hover .mission-content {
+     box-shadow: 0 4px 0 #a3a3a3, 4px 0 0 #a3a3a3;
+     border-color: #a3a3a3;
+ }
+
+ .shadow-pixel {
+     box-shadow: 0 2px 0 #bdbdbd, 2px 0 0 #bdbdbd;
+ }

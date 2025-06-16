@@ -1,123 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Character Profile | Ferreus Phoenix</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Profile | Ferreus Phoenix</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Press Start 2P', monospace;
-      background-color: #fff;
-      color: #222;
-    }
-
-    a {
-      transition: color 0.3s ease;
-      color: #444;
-    }
-
-    a:hover {
-      color: #888;
-    }
-  </style>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/partials.js"></script>
 </head>
+
 <body class="flex flex-col min-h-screen">
 
-  <!-- Navbar -->
-  <nav class="border-b bg-black border-gray-700 py-4 text-center text-sm">
-    <ul class="flex justify-center gap-8 uppercase text-white">
-      <li><a href="/">Home</a></li>
-      <li><a href="/character.html">Character</a></li>
-      <li><a href="/skill-tree">Skill Tree</a></li>
-      <li><a href="/quest-log">Quest Log</a></li>
-      <li><a href="/projects">Missions Completed</a></li>
-      <li><a href="/inventory">Inventory</a></li>
-      <li><a href="/whisper">Whisper</a></li>
-    </ul>
-  </nav>
+    <div id="navbar"></div>
 
-  <!-- Main Content -->
-  <main class="flex-grow p-6">
-    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-white border-2 border-gray-200 rounded-lg shadow-lg p-6 md:p-10 max-w-3xl mx-auto">
-      <!-- Profile Image and Info -->
-      <div class="flex flex-col items-center w-full md:w-1/3">
-        <div class="relative mb-4">
-          <img src="profile.png" alt="Profile Photo" class="w-36 h-36 rounded-full border-4 border-gray-400 shadow-md object-cover bg-gray-100" />
-          <span class="absolute bottom-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded-full border-2 border-white font-bold" style="transform: translate(30%, 30%);">LVL 24</span>
-        </div>
-        <div class="bg-gray-100 border border-gray-300 rounded px-3 py-2 w-full text-center mb-2">
-          <span class="font-mono text-xs text-gray-500">Class:</span>
-          <span class="text-gray-700 text-xs font-normal">Full Stack Developer</span>
-        </div>
-        <div class="bg-gray-100 border border-gray-300 rounded px-3 py-2 w-full text-center">
-          <span class="font-mono text-xs text-gray-500">Location:</span>
-          <span class="text-gray-700 text-xs font-normal">Lalitpur, Nepal</span>
-        </div>
-      </div>
+    <!-- Main Content -->
+    <main class="flex-grow p-6">
+        <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-8 bg-white border-2 border-gray-200 rounded-lg shadow-lg p-6 md:p-10 max-w-3xl mx-auto">
+            <!-- Profile Image and Info -->
+            <div class="flex flex-col items-center w-full md:w-1/3">
+                <div class="relative mb-4">
+                    <img src="profile.png" alt="Profile Photo"
+                        class="w-36 h-36 rounded-full border-4 border-gray-400 shadow-md object-cover bg-gray-100" />
+                    <span
+                        class="absolute bottom-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded-full border-2 border-white font-bold"
+                        style="transform: translate(30%, 30%);">LVL 24</span>
+                </div>
+                <div class="bg-gray-100 border border-gray-300 rounded px-3 py-2 w-full text-center mb-2">
+                    <span class="font-mono text-xs text-gray-500">Class:</span>
+                    <span class="text-gray-700 text-xs font-normal">Full Stack Developer</span>
+                </div>
+                <div class="bg-gray-100 border border-gray-300 rounded px-3 py-2 w-full text-center">
+                    <span class="font-mono text-xs text-gray-500">Location:</span>
+                    <span class="text-gray-700 text-xs font-normal">Lalitpur, Nepal</span>
+                </div>
+            </div>
 
-      <!-- Profile Details -->
-      <div class="flex-1 w-full md:w-2/3">
-        <h2 class="text-2xl font-extrabold mb-2 tracking-widest text-gray-800 text-center md:text-left">Nischal Rai</h2>
+            <!-- Profile Details -->
+            <div class="flex-1 w-full md:w-2/3">
+                <h2 class="text-2xl font-extrabold mb-2 tracking-widest text-gray-800 text-center md:text-left">Nischal
+                    Rai</h2>
 
-        <!-- Stats -->
-        <div class="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
-          <span class="flex items-center gap-1 bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-mono">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
-            HP <span class="ml-1">■■■■■■■■■■</span>
-          </span>
-          <span class="flex items-center gap-1 bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-mono">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/></svg>
-            MP <span class="ml-1">■■■■■■■■■□</span>
-          </span>
-          <span class="flex items-center gap-1 bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-mono">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l2.39 6.955h7.305l-5.91 4.295 2.39 6.955L10 15.91l-5.175 4.295 2.39-6.955-5.91-4.295h7.305z"/></svg>
-            XP <span class="ml-1">Lv. 24</span>
-          </span>
+                <!-- Stats -->
+                <div class="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
+                    <span class="flex items-center gap-1 bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-mono">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-500" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                        HP <span class="ml-1">■■■■■■■■■■</span>
+                    </span>
+                    <span class="flex items-center gap-1 bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-mono">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <circle cx="10" cy="10" r="8" />
+                        </svg>
+                        MP <span class="ml-1">■■■■■■■■■□</span>
+                    </span>
+                    <span class="flex items-center gap-1 bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-mono">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-500" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 2l2.39 6.955h7.305l-5.91 4.295 2.39 6.955L10 15.91l-5.175 4.295 2.39-6.955-5.91-4.295h7.305z" />
+                        </svg>
+                        XP <span class="ml-1">Lv. 24</span>
+                    </span>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-2 text-sm mb-4">
+                    <div><span class="font-bold text-gray-600">Email:</span> nischalraee0@gmail.com</div>
+                    <div><span class="font-bold text-gray-600">Phone:</span> +977 9841066203</div>
+                </div>
+
+                <!-- Traits -->
+                <div class="mb-4">
+                    <span class="font-bold text-gray-600 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 text-gray-400" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Character Traits:
+                    </span>
+                    <ul
+                        class="bg-gray-50 border border-gray-200 rounded px-4 py-3 mt-2 text-gray-700 text-sm max-w-md list-disc list-inside space-y-2">
+                        <li>Fast learner and puzzle solver</li>
+                        <li>Enjoys tackling complex problems with logic</li>
+                        <li>Quickly adapts to new skills and tasks</li>
+                        <li>Dedicated to growth and effective contribution</li>
+                    </ul>
+                </div>
+
+                <!-- Links -->
+                <div class="flex gap-4 mt-6">
+                    <a href="https://github.com/nischalraii"
+                        class="text-xs bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700 font-mono"
+                        target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/nischal-rai-1o1"
+                        class="text-xs bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-500 font-mono"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <!-- Contact Info -->
-        <div class="space-y-2 text-sm mb-4">
-          <div><span class="font-bold text-gray-600">Email:</span> nischalraee0@gmail.com</div>
-          <div><span class="font-bold text-gray-600">Phone:</span> +977 9841066203</div>
-        </div>
-
-        <!-- Traits -->
-        <div class="mb-4">
-          <span class="font-bold text-gray-600 flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            Character Traits:
-          </span>
-          <ul class="bg-gray-50 border border-gray-200 rounded px-4 py-3 mt-2 text-gray-700 text-sm max-w-md list-disc list-inside space-y-2">
-            <li>Fast learner and puzzle solver</li>
-            <li>Enjoys tackling complex problems with logic</li>
-            <li>Quickly adapts to new skills and tasks</li>
-            <li>Dedicated to growth and effective contribution</li>
-          </ul>
-        </div>
-
-        <!-- Links -->
-        <div class="flex gap-4 mt-6">
-          <a href="https://github.com/nischalraii" class="text-xs bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700 font-mono" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/nischal-rai-1o1" class="text-xs bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-500 font-mono" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-gray-700 text-center text-xs py-4 text-gray-400">
-    © 2025 Ferreus Phoenix. All rights reserved.
-  </footer>
+    <!-- Footer -->
+    <div id="footer"></div>
 
 </body>
+
 </html>

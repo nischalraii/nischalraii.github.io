@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missions Completed</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- Pixel Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/partials.js"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <div id="navbar"></div>
+
+    <div class="max-w-2xl mx-auto px-4 py-10">
+        <h2
+            class="text-2xl font-pixel mb-8 text-center tracking-widest border-b-2 border-gray-300 pb-2 flex items-center justify-center gap-2">
+            <span class="inline-block">MISSIONS COMPLETED</span>
+            <span class="inline-block animate-bounce">🏆</span>
+        </h2>
+
+        <div id="missions" class="mission-timeline relative"></div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="missions.js"></script>
+
+</body>
+
+</html>
