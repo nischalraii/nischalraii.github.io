@@ -1,120 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nischal Raii | Laravel Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nischal Raii | Laravel Developer</title>
 
-  <!-- Google Retro Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <!-- Google Retro Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Press Start 2P', monospace;
-      background-color: #fff;
-      color: #222;
-    }
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/styles.css" />
 
-    a {
-      transition: color 0.3s ease;
-      color: #444;
-    }
+    <script defer src="/js/partials.js"></script>
 
-    a:hover {
-      color: #888;
-    }
-
-    .crt-effect {
-      background: none;
-    }
-
-    .blinking-cursor::after {
-      content: '|';
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-      0%, 50% {
-        opacity: 1;
-      }
-      51%, 100% {
-        opacity: 0;
-      }
-    }
-
-    .terminal-box {
-      border: 2px solid #888;
-      padding: 2rem;
-      background-color: #1a1a1a;
-      box-shadow: inset 0 0 10px #000;
-    }
-
-    .btn-cta {
-      font-size: 0.75rem;
-      padding: 0.75rem 1.5rem;
-      border: 2px solid #aaa;
-      background-color: #000;
-      display: inline-block;
-      transition: background-color 0.3s, color 0.3s;
-      margin-top: 2rem;
-    }
-
-    .btn-cta:hover {
-      background-color: #2a2a2a;
-      color: #f0f0f0;
-    }
-  </style>
 </head>
-<body class="flex flex-col min-h-screen">
 
-  <!-- Navigation -->
-  <nav class="border-b bg-black border-gray-700 py-4 text-center text-sm">
-    <ul class="flex justify-center gap-8 uppercase text-white">
-      <li><a href="/">Home</a></li>
-      <li><a href="/character">Character</a></li>
-      <li><a href="/skill-tree">Skill Tree</a></li>
-      <li><a href="/quest-log">Quest Log</a></li>
-      <li><a href="/projects">Missions Completed</a></li>
-      <li><a href="/inventory">Inventory</a></li>
-      <li><a href="/whisper">Whisper</a></li>
-    </ul>
-  </nav>
+<body class="bg-white text-gray-800">
 
-  <!-- Main Content -->
-  <main class="flex-grow p-6 max-w-4xl mx-auto text-gray-700">
+    <div id="navbar"></div>
 
-    <div class="flex flex-col items-center justify-center text-center space-y-10 mt-20">
+    <!-- Main Content -->
+    <main class="flex-grow p-6 max-w-4xl mx-auto text-gray-700">
 
-      <!-- Hero Message -->
-      <div>
-        <h1 class="text-2xl md:text-4xl uppercase blinking-cursor text-gray-600">Hi, I'm Nischal Rai</h1>
-        <p class="mt-4 text-sm md:text-base tracking-widest text-gray-400">
-          Laravel Developer | Modular Design Enthusiast | Pixel Aesthetic Lover
-        </p>
-      </div>
+        <div class="flex flex-col items-center justify-center text-center space-y-10 mt-20">
 
-      <!-- Terminal-style box -->
-      <div class="terminal-box max-w-xl w-full text-left font-mono text-sm leading-relaxed text-gray-300">
-        > I build powerful web apps using Laravel, designed with performance, maintainability, and clean architecture.<br><br>
-        > I love crafting retro-style UIs that bring back the charm of classic games.<br><br>
-        > Let’s build something <span class="text-white">awesome</span> together.
-      </div>
+            <!-- Hero Message -->
+            <div>
+                <h1 class="text-2xl md:text-4xl uppercase blinking-cursor text-gray-600">Hi, I'm Nischal Rai</h1>
+                <p class="mt-4 text-sm md:text-base tracking-widest text-gray-400">
+                    Laravel Developer | Modular Design Enthusiast | Pixel Aesthetic Lover
+                </p>
+            </div>
 
-      <!-- Call to Action Button -->
-      <a href="/projects" class="btn-cta text-gray-200 visited:text-gray-300 uppercase">View My Projects</a>
+            <!-- Terminal-style box -->
+            <div class="terminal-box max-w-xl w-full text-left font-mono text-sm leading-relaxed text-gray-300">
+                > I build powerful web apps using Laravel, designed with performance, maintainability, and clean
+                architecture.<br><br>
+                > I love crafting retro-style UIs that bring back the charm of classic games.<br><br>
+                > Let’s build something <span class="text-white">awesome</span> together.
+            </div>
 
-    </div>
+            <!-- Call to Action Button -->
+            <a href="/projects" class="btn-cta text-gray-200 visited:text-gray-300 uppercase">View My Projects</a>
 
-  </main>
+        </div>
 
-  <!-- Footer -->
-  <footer class="border-t border-gray-700 text-center text-xs py-4 text-gray-400">
-    © 2025 Ferreus Phoenix. All rights reserved.
-  </footer>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
 
 </body>
+
 </html>
