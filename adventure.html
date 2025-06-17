@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adventure Log</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="/js/partials.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    
+    <h2><i class="ri-treasure-map-line"></i> ADVENTURE LOG</h2>
+    
+    <div class="timeline">
+        <div class="timeline-list" id="timeline-list">
+            <!-- timeline items go here dynamically -->
+        </div>
+        <div class="detail-panel" id="detail-panel">
+            <p>Select a mission on the left to see details here.</p>
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+    <script src="/js/adventure.js"></script>
+</body>
+
+</html>
