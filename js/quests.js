@@ -102,7 +102,7 @@ const missions = [
 ];
 
 function renderMissions() {
-  const container = document.getElementById("missions");
+  const container = document.getElementById("quests");
   if (!container) return;
 
   missions.forEach((mission) => {
