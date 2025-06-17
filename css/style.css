@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
     font-family: 'Press Start 2P', monospace;
@@ -122,3 +122,84 @@ a:hover {
         width: 1rem; /* 16px */
     }
 }
+
+
+/* skill textarea */
+
+ .tree {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .branch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      position: relative;
+    }
+
+    .hex {
+      width: 120px;
+      height: 69.28px;
+      background-color: #444;
+      position: relative;
+      margin: 34.64px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 0.6rem;
+      color: #eee;
+      border: 2px solid #aaa;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease, transform 0.3s ease, border 0.3s ease;
+    }
+
+    .hex:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+    .hex:before,
+    .hex:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+    }
+
+    .hex:before {
+      bottom: 100%;
+      border-bottom: 34.64px solid #444;
+    }
+
+    .hex:after {
+      top: 100%;
+      border-top: 34.64px solid #444;
+    }
+
+    .hex img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 4px;
+      image-rendering: pixelated;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .hex:hover img {
+      filter: grayscale(0%);
+    }
+
+    .connect {
+      width: 3px;
+      height: 2rem;
+      background: #aaa;
+      margin-top: -1rem;
+      margin-bottom: -1rem;
+    }

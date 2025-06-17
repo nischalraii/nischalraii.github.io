@@ -2,37 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adventure Log</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Log | Developer Portfolio</title>
 
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="/css/style.css" />
 
-    <script src="/js/partials.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
 
+    <!-- Google Fonts for pixel/fantasy style -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Cinzel+Decorative:wght@700&family=VT323&display=swap"
+        rel="stylesheet">
+    <!-- Remix Icon CDN for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        /* Minimal grayscale override for this page */
 
+        .adventure-log-main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+            padding: 2rem 1.5rem;
+        }
+
+        .adventure-title {
+            font-family: 'Cinzel Decorative', fantasy, serif;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .adventure-flex {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .adventure-timeline {
+            flex: 1 1 260px;
+            min-width: 220px;
+        }
+
+        .adventure-details {
+            flex: 2 1 350px;
+            min-width: 260px;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0.5rem;
+            border-left: 3px dashed #bbb;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.2s;
+        }
+
+        .timeline-item.selected {
+            background: #f5f5f5;
+            border-left: 3px solid #888;
+            box-shadow: 0 2px 8px #e0e0e0;
+        }
+
+        .timeline-icon {
+            font-size: 1.6rem;
+            margin-right: 0.5rem;
+            min-width: 2.2rem;
+            text-align: center;
+        }
+
+        .badge {
+            background: #222;
+            color: #fff;
+            font-size: 0.7rem;
+            border-radius: 4px;
+            padding: 0.1em 0.5em;
+            margin-left: 0.5em;
+            letter-spacing: 1px;
+        }
+
+        .adventure-details h3 {
+            font-family: 'Press Start 2P', 'VT323', monospace;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .adventure-details ul.missions {
+            margin: 0.5em 0 1em 1.2em;
+            padding: 0;
+            list-style: disc;
+        }
+
+        @media (max-width: 700px) {
+            .adventure-flex {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="adventure-log">
     <div id="navbar"></div>
-    
-    <h2><i class="ri-treasure-map-line"></i> ADVENTURE LOG</h2>
-    
-    <div class="timeline">
-        <div class="timeline-list" id="timeline-list">
-            <!-- timeline items go here dynamically -->
-        </div>
-        <div class="detail-panel" id="detail-panel">
-            <p>Select a mission on the left to see details here.</p>
+    <div class="adventure-log-main">
+        <h2
+            class="text-2xl font-pixel mb-8 text-center tracking-widest my-4 border-gray-300 pb-2 flex items-center justify-center gap-2">
+            <span class="inline-block">ADVENTURE LOG</span>
+        </h2>
+        <div class="adventure-flex">
+            <div class="adventure-timeline" id="timeline-list"></div>
+            <div class="adventure-details" id="detail-panel">
+                <p>Select a mission on the left to see details here.</p>
+            </div>
         </div>
     </div>
-    
     <div id="footer"></div>
-    <script src="/js/adventure.js"></script>
+    <script src="js/partials.js"></script>
+    <script src="js/adventure.js"></script>
 </body>
 
 </html>
